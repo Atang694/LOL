@@ -35,7 +35,7 @@
 
 <p>Here's a picture of a cute cat:</p>
 
-<img src="https://placekitten.com/200/300" alt="A cute kitten">
+<img src="https://images.unsplash.com/photo-1529778873920-4da4926a72c2?ixlib=rb-1.2.1&w=1000&q=80" alt="A cute kitten">
 
 
 <p>Visit <a href="https://github.com">GitHub</a> to learn more about coding.</p>
