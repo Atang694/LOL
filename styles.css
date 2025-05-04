@@ -25,14 +25,6 @@ padding: 10px;
 
 text-align: center;
 
-}
-.top-bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: #3377FF;
-  padding: 10px 40px;
-}
 
 .logo img {
   height: 60px;
