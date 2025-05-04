@@ -23,7 +23,7 @@ color: white;
 
 padding: 10px;
 
-text-align: center;
+text-align: right;
 
 }
 
@@ -135,42 +135,6 @@ color: #ff5722;
 
 font-weight: bold;
 
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body, html {
-  height: 100%;
-  font-family: sans-serif;
-}
-
-.slideshow {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-
-  background-size: cover;
-  background-position: center;
-  animation: slideshow 15s infinite;
-}
-
-@keyframes slideshow {
-  0%   { background-image:https://github.com/Atang694/LOL/blob/main/HSH.siteimages.html/Installation.jpg?raw=true ('images/slide1.jpg'); }
-  33%  { background-image:https://github.com/Atang694/LOL/blob/main/HSH.siteimages.html/Untitled-design-26-1024x577.png?raw=true('images/slide2.jpg'); }
-  
-}
-
-.content {
-  position: relative;
-  color: white;
-  text-align: center;
-  padding-top: 20%;
 }
 
 
