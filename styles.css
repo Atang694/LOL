@@ -45,6 +45,7 @@ h1 {
   font-size: 1.8rem;
   color: white;
   margin-bottom: 5px;
+  flex-grow:1;
 }
 
 nav a {
