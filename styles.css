@@ -17,7 +17,7 @@ line-height: 1.6;
 
 header {
 display:flex;
-flex-wrap:flex;
+flex-wrap:wrap;
 background-color: #3377FF;
 color: white;
 padding: 10px 20px;
@@ -33,9 +33,6 @@ align-items: flex-start;
   flex-shrink: 0;
 }
 
-.logo img {
-  height: 60px;
-}
 
 h1, nav {
   width: 100%;
