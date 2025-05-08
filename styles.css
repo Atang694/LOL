@@ -13,7 +13,7 @@ padding: 0;
 
 line-height: 1.6;
 
-max-width:1000px;
+
 
 }
 
@@ -82,18 +82,7 @@ height: auto;
 
 display: block;
 
-margin: 20px 0;
-
-}
-main {
-
-padding: 20px;
-
-max-width: 800px;
-
-margin: 0 auto;
-
-}
+margin: 20px;
 
 
 footer {
@@ -134,11 +123,7 @@ a:hover {
 text-decoration: underline;
 
 }
-img {
 
-border: 5px solid #3377FF;
-
-border-radius: 10px;
 
 }
 main a[href^="mailto:"] {
