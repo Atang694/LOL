@@ -25,6 +25,7 @@ header {
   align-items: center;
 }
 
+
 /* Logo and Heading Row */
 header .logo-heading {
   display: flex;
@@ -33,21 +34,31 @@ header .logo-heading {
   gap: 15px;
   flex-wrap: wrap;
 }
+.logo{
+  margin-right:auto;
+}
 
 .logo img {
   height: 60px;
   width: auto;
+  border-radius:10px;
 }
 
 h1 {
   font-size: 1.8rem;
   font-weight: bold;
   text-align: center;
+  flex:1;
 }
 
 /* Navigation Section */
 nav {
   margin-top: 10px;
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  justify-content: center; 
+  flex-wrap: wrap;
 }
 
 nav a {
