@@ -33,7 +33,7 @@ header .logo-heading {
   justify-content: space-between;
   gap: 15px;
   flex-wrap: wrap;
-  margin:0 auto;
+  
 }
 .logo{
   margin-right:auto;
