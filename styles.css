@@ -115,7 +115,31 @@ main {
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
-.values-images {
+
+.values-section {
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.values-list{
+  float: left;
+  width: 60%;
+}
+
+
+.vision-image {
+  float: right;
+  width: 35%;
+  text-align: center;
+}
+
+.vision-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+ .clear-below
+  clear: both;
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -123,12 +147,12 @@ main {
   flex-wrap: wrap;
 }
 
-.values-images img {
-  width: 250px;
+.clear-below img {
+  width: 300px;
   height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 10px;
 }
+
 
 
 /* Footer */
