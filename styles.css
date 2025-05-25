@@ -116,50 +116,21 @@ main {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-.values-wrapper {
-  /* keep text and vision in one flow until we float */
-  position: relative;
-  margin-bottom: 20px;
-}
-
-/* Float vision next to the list */
-.vision-img {
-  float: right;
-  width: 200px;        /* fixed for consistency */
-  height: auto;
-  margin: 0 0 10px 15px; /* spacing from text */
-  border-radius: 8px;
-  object-fit: cover;
-}
-
-/* Clear the float before bottom images */
-.bottom-images {
-  clear: both;          /* push below vision float */
+.values-images {
   display: flex;
-  gap: 10px;
-  justify-content: flex-start;
-  margin-top: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  margin-top: 20px;
 }
 
-/* Consistent sizing for bottom images */
-.bottom-images img {
-  width: 200px;
+.values-images img {
+  width: 250px;
   height: auto;
-  border-radius: 8px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   object-fit: cover;
-}
-
-/* Responsive fallback */
-@media (max-width: 600px) {
-  .vision-img,
-  .bottom-images img {
-    float: none;
-    width: 100%;
-    max-width: none;
-  }
-  .bottom-images {
-    flex-direction: column;
-  }
 }
 
 
