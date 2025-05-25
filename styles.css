@@ -136,9 +136,9 @@ main {
 
 /* Special control for the Vision image */
 .values-images .vision {
-  order: -1; /* Push vision to come first in the wrap */
-  margin-left: auto; /* Pull it to the right side of the container */
+  margin-left: 20px; 
   margin-bottom: 10px;
+  align-self: flex-start;
 }
 
 
