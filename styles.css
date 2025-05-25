@@ -119,35 +119,27 @@ main {
 .values-images {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
-  gap: 20px;
+  gap: 15px;
   margin-top: 20px;
-  position: relative;
 }
 
-/* Common style for all images */
+/* Target all images for consistent sizing */
 .values-images img {
   width: 250px;
   height: auto;
-  border-radius: 10px;
+  border-radius: 8px;
   object-fit: cover;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Specific layout control */
-.values-images .mission,
-.values-images .building {
-  flex: 1 1 250px;
-}
-
+/* Special control for the Vision image */
 .values-images .vision {
-  margin-left: auto;
-  order: 1;
+  order: -1; /* Push vision to come first in the wrap */
+  margin-left: auto; /* Pull it to the right side of the container */
+  margin-bottom: 10px;
 }
-
-
-
 
 
 footer {
