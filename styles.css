@@ -116,30 +116,32 @@ main {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-.values-section {
-  overflow: hidden;
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
   margin-top: 20px;
 }
 
-.values-list{
-  float: left;
-  width: 60%;
+.text-values {
+  flex: 1 1 50%;
+  min-width: 300px;
 }
 
-
-.vision-image {
-  float: right;
-  width: 35%;
+.vision-img {
+  flex: 1 1 40%;
   text-align: center;
 }
 
-.vision-image img {
+.vision-img img {
   width: 100%;
+  max-width: 300px;
   height: auto;
   border-radius: 10px;
 }
- .clear-below
-  clear: both;
+
+.bottom-images {
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -147,11 +149,12 @@ main {
   flex-wrap: wrap;
 }
 
-.clear-below img {
+.bottom-images img {
   width: 300px;
   height: auto;
   border-radius: 10px;
 }
+
 
 
 
