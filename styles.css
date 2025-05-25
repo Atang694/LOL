@@ -125,13 +125,14 @@ main {
 /* Values text floats left */
 .values-list {
   float: left;
-  width: 60%;
+  width: 55%;
 }
 
 /* Vision image floats right */
 .vision-image {
   float: right;
-  width: 35%;
+  width: 30%;
+  margin-right:10px;
   text-align: center;
 }
 
