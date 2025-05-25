@@ -116,34 +116,50 @@ main {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-.values-images {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* two equal columns */
-  grid-template-areas: 
-              "vision"
-    "mission building";
-  gap: 10px;
-  margin-top: 10px;
-  max-width: 100%;
+.values-wrapper {
+  /* keep text and vision in one flow until we float */
+  position: relative;
+  margin-bottom: 20px;
 }
 
+/* Float vision next to the list */
 .vision-img {
-  grid-area: vision;
-  justify-self: start; /* align to left */
-  max-width: 100%;
+  float: right;
+  width: 200px;        /* fixed for consistency */
   height: auto;
+  margin: 0 0 10px 15px; /* spacing from text */
+  border-radius: 8px;
+  object-fit: cover;
 }
 
-.mission-img {
-  grid-area: mission;
-  max-width: 100%;
-  height: auto;
+/* Clear the float before bottom images */
+.bottom-images {
+  clear: both;          /* push below vision float */
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+  margin-top: 10px;
 }
 
-.building-img {
-  grid-area: building;
-  max-width: 100%;
+/* Consistent sizing for bottom images */
+.bottom-images img {
+  width: 200px;
   height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Responsive fallback */
+@media (max-width: 600px) {
+  .vision-img,
+  .bottom-images img {
+    float: none;
+    width: 100%;
+    max-width: none;
+  }
+  .bottom-images {
+    flex-direction: column;
+  }
 }
 
 
