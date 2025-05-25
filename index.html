@@ -42,8 +42,9 @@
 
 
  <div class="main-image">
-<img src="https://github.com/Atang694/LOL/blob/main/HSH.siteimages.html/Installation.jpg?raw=true" alt="home img"
- </div>
+  <img id="slideshow" src="https://github.com/Atang694/LOL/blob/main/HSH.siteimages.html/Installation.jpg?raw=true" alt="home img">
+</div>
+
 
 
 
@@ -56,6 +57,20 @@
 <p>&copy; 2025 H.S.H</p>
 
 </footer>
+<script>
+  const slides = [
+    "https://github.com/Atang694/LOL/blob/main/HSH.siteimages.html/Installation.jpg?raw=true",
+    "
+  ];
+
+  let current = 0;
+  const slideshow = document.getElementById("slideshow");
+
+  setInterval(() => {
+    current = (current + 1) % slides.length;
+    slideshow.src = slides[current];
+  }, 3000); // Change image every 3 seconds
+</script>
 
 </body>
 
