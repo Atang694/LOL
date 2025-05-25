@@ -116,32 +116,7 @@ main {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-.values-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  margin-top: 20px;
-}
-
-.values-list {
-  flex: 1 1 50%;
-  min-width: 300px;
-}
-
-.vision-img {
-  flex: 1 1 40%;
-  text-align: center;
-}
-
-.vision-img img {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-  border-radius: 10px;
-}
-
-.bottom-images {
+.values-images {
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -149,10 +124,11 @@ main {
   flex-wrap: wrap;
 }
 
-.bottom-images img {
-  width: 300px;
+.values-images img {
+  width: 250px;
   height: auto;
-  border-radius: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 
