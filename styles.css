@@ -118,38 +118,34 @@ main {
 
 .values-images {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Two columns */
-  grid-template-areas:
-    ". vision"
+  grid-template-columns: 1fr 1fr; /* two equal columns */
+  grid-template-areas: 
+    "vision vision"
     "mission building";
   gap: 10px;
-  max-width: 600px;
-  margin: 20px auto;
+  margin-top: 10px;
+  max-width: 100%;
 }
 
-.values-images .vision-img {
+.vision-img {
   grid-area: vision;
-  width: 100%;
+  justify-self: start; /* align to left */
+  max-width: 100%;
   height: auto;
-  object-fit: cover;
-  border-radius: 8px;
 }
 
-.values-images img:nth-child(2) {
+.mission-img {
   grid-area: mission;
-  width: 100%;
+  max-width: 100%;
   height: auto;
-  object-fit: cover;
-  border-radius: 8px;
 }
 
-.values-images img:nth-child(3) {
+.building-img {
   grid-area: building;
-  width: 100%;
+  max-width: 100%;
   height: auto;
-  object-fit: cover;
-  border-radius: 8px;
 }
+
 
 
 footer {
