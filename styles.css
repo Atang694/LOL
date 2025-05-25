@@ -116,22 +116,47 @@ main {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-.values-images {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 20px;
+/* Container to hold Values text and Vision image */
+.values-section {
+  overflow: hidden;
   margin-top: 20px;
 }
 
-.values-images img {
-  width: 250px;
+/* Values text floats left */
+.values-list {
+  float: left;
+  width: 60%;
+}
+
+/* Vision image floats right */
+.vision-image {
+  float: right;
+  width: 35%;
+  text-align: center;
+}
+
+.vision-image img {
+  width: 100%;
   height: auto;
   border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  object-fit: cover;
 }
+
+/* Clear floats and show Mission + Building images below */
+.clear-below {
+  clear: both;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.clear-below img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
 
 
 
