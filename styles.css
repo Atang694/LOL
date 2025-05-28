@@ -116,48 +116,62 @@ main {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Container to hold Values text and Vision image */
-.values-section {
-  overflow: hidden;
-  margin-top: 20px;
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-/* Values text floats left */
-.values-list {
-  float: left;
-  width: 55%;
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 40px;
+  gap: 20px;
 }
 
-/* Vision image floats right */
-.vision-image {
-  float: right;
-  width: 30%;
-  margin-right:160px;
+.section.no-image {
+  flex-direction: column;
+}
+
+.text {
+  flex: 1 1 55%;
+}
+
+.image {
+  flex: 1 1 40%;
   text-align: center;
 }
 
-.vision-image img {
-  width: 100%;
+.image img {
+  max-width: 100%;
   height: auto;
   border-radius: 10px;
 }
 
-/* Clear floats and show Mission + Building images below */
-.clear-below {
-  clear: both;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 20px;
-  flex-wrap: wrap;
+ul {
+  padding-left: 20px;
 }
 
-.clear-below img {
-  width: 300px;
-  height: auto;
-  border-radius: 10px;
+ul li {
+  margin-bottom: 8px;
 }
 
+@media (max-width: 768px) {
+  .section {
+    flex-direction: column;
+  }
+
+  .image {
+    order: -1;
+  }
+
+  .text, .image {
+    flex: 1 1 100%;
 
 
 
