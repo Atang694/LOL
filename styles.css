@@ -247,7 +247,55 @@ ul li {
 .site-footer p {
   margin: 10px 0;
   line-height: 1.6;
+} 
+.feedback-section {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #f4f4f4;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
 }
+
+.feedback-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback-form label {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.feedback-form button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.feedback-form button:hover {
+  background-color: #555;
+}
+
 
 
 
