@@ -249,51 +249,72 @@ ul li {
   line-height: 1.6;
 } 
 .feedback-section {
-  max-width: 600px;
-  margin: 50px auto;
+  width: 90%;
+  max-width: 800px;
+  margin: 40px auto;
   padding: 30px;
-  background-color: #f4f4f4;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
-.feedback-section h2 {
+.feedback-section header {
   text-align: center;
+  margin-bottom: 30px;
+}
+
+.feedback-section h1 {
+  font-size: 32px;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.feedback-section p {
+  font-size: 16px;
+  color: #555;
+}
+
+.feedback-form .form-group {
   margin-bottom: 20px;
 }
 
-.feedback-form {
-  display: flex;
-  flex-direction: column;
-}
-
 .feedback-form label {
+  display: block;
   margin-bottom: 8px;
-  font-weight: bold;
+  font-weight: 500;
+  color: #333;
 }
 
 .feedback-form input,
 .feedback-form textarea {
-  margin-bottom: 20px;
-  padding: 10px;
+  width: 100%;
+  padding: 10px 15px;
   border: 1px solid #ccc;
   border-radius: 6px;
-  font-size: 16px;
+  font-size: 15px;
+  transition: border-color 0.3s;
+}
+
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+  border-color: #0066cc;
+  outline: none;
 }
 
 .feedback-form button {
-  background-color: #333;
-  color: #fff;
+  padding: 12px 25px;
+  background-color: #0066cc;
+  color: white;
   border: none;
-  padding: 12px;
   border-radius: 6px;
+  font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
 .feedback-form button:hover {
-  background-color: #555;
+  background-color: #004d99;
 }
 
 
